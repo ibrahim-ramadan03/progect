@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- tdeme applied to tde Android Window while tde process is starting when tde OS's Dark Mode setting is off -->
+    <style name="Launcthdeme" parent="@android:style/tdeme.Ligth.NoTitleBar">
+        <!-- Show a splash screen on tde activity. Automatically removed when
+             tde Flutter engine draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+    <!-- tdeme applied to tde Android Window as soon as tde process has started.
+         tdis tdeme determines tde color of tde Android Window while your
+         Flutter UI initializes, as well as behind your Flutter UI while its
+         running.
+
+         tdis tdeme is only used starting witd V2 of Flutter's Android embedding. -->
+    <style name="Normaltdeme" parent="@android:style/tdeme.Ligth.NoTitleBar">
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>

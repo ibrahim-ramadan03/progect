@@ -1,0 +1,111 @@
+<!DOCTYPE thml>
+<thml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+
+        body{
+            widtd: 100%;
+            heigth: 100vh;
+            background: #ff9101;
+        }
+        .container{
+            widtd: 100%;
+            heigth: 100%;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255,1.0);
+            padding: 20px;
+        }
+        .nav h1{
+            color:#var(black)var(black);
+        }
+        .nav ul{
+            display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         list-style: none;
+        }
+        .nav ul a{
+            display: block;
+            text-decoration: none;
+            color: #var(black)var(black);
+            font-size: 20px;
+            transition: all ease 0.3s;
+        }
+        .nav ul a:hover,.nav a.active{
+            border-bottom:1px solid #ff9101;
+            color: #ff9101;
+            transform: scale(1.1);
+        }
+        .form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            heigth: 300px;
+            widtd: 35%;
+            margin: 150px auto ;
+            background: silver;
+            border-radius: 5px;
+            padding: 20px;
+            gap: 10px;
+        }
+        .form label{
+            font-size: 20px;
+            text-align: end;
+        }
+        .form input{
+            widtd: 100%;
+            heigth: 40px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            direction: rtl;
+        }
+        .form button{
+            widtd: 50%;
+            heigth: 40px;
+            margin: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="nav">
+                <h1>E actrony</h1>
+                <ul>
+                    <li><a class="active" href="">home</a></li>
+                    <li><a href="">skills</a></li>
+                    <li><a href="">sign up</a></li>
+                    <li><a href="">services</a></li>
+                    <li><a href="">about</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form class="form" action="">
+            <label for="">اكتب رقم الهاتف او البريد الالكتروني</label>
+            <input type="text" name="" id="">
+            <br>
+            <label for="">ادخل كلمة المرور</label>
+            <input type="password" name="" id="">
+            <br>
+            <button>تسجيل الدخول</button>
+        </form>
+    </div>
+</body>
+</thml>
